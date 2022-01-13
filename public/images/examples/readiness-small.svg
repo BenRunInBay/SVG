@@ -1,0 +1,56 @@
+<svg viewBox="0 0 391 913"
+    xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <style type="text/css">
+            @import url('https://fonts.googleapis.com/css?family=Allerta:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic');
+        </style>
+    </defs>
+    <g id="start">
+        <rect id="Rectangle 586" x="1.5" y="118.463" width="389" height="112.148" fill="white" stroke="#717171"/>
+        <rect id="start-europe" x="270.63" y="156.481" width="43.3333" height="43.3333" fill="#B15DFF"/>
+        <path id="start-americas" d="M194.796 156.481L218.772 198.009H170.82L194.796 156.481Z" fill="#6E8CDD"/>
+        <circle id="start-asia" cx="97.2963" cy="175.741" r="24.0741" fill="#00A7A7"/>
+        <rect id="Rectangle 582" x="1.5" y="0.5" width="389" height="119.37" fill="#E8E8EE" stroke="#717171"/>
+        <text id="Start" fill="#1A1A24" xml:space="preserve" style="white-space: pre" font-family="Allerta" font-size="36" letter-spacing="0em">
+            <tspan x="155" y="73.1504">Start</tspan>
+        </text>
+    </g>
+    <g id="develop">
+        <rect id="Rectangle 585" x="0.500092" y="362.463" width="389" height="112.148" fill="white" stroke="#717171"/>
+        <path id="develop-americas" d="M196.204 400.481L220.18 442.009H172.228L196.204 400.481Z" fill="#6E8CDD"/>
+        <circle id="develop-asia" cx="98.7038" cy="419.741" r="24.0741" fill="#00A7A7"/>
+        <rect id="Rectangle 583" x="0.5" y="244.5" width="389" height="119.37" rx="0.5" fill="#C0C0CF" stroke="#717171"/>
+        <text id="Develop" fill="#1A1A24" xml:space="preserve" style="white-space: pre" font-family="Allerta" font-size="36" letter-spacing="0em">
+            <tspan x="110.741" y="317.262">Develop</tspan>
+        </text>
+    </g>
+    <g id="deploy">
+        <rect id="Rectangle 586_2" x="1.5" y="606.463" width="389" height="112.148" fill="white" stroke="#717171"/>
+        <rect id="deploy-europe" x="273.037" y="644.481" width="43.333" height="43.3333" fill="#B15DFF"/>
+        <circle id="deploy-asia" cx="99.7037" cy="663.741" r="24.074" fill="#00A7A7"/>
+        <rect id="Rectangle 584" x="1.50012" y="488.5" width="389" height="119.37" fill="#FFE600" stroke="#717171"/>
+        <text id="Deploy" fill="#1A1A24" xml:space="preserve" style="white-space: pre" font-family="Allerta" font-size="36" letter-spacing="0em">
+            <tspan x="123.778" y="561.261">Deploy</tspan>
+        </text>
+    </g>
+    <g id="legend-layout">
+        <g id="asia-legend">
+            <text id="Asia" fill="#C4C4CD" xml:space="preserve" style="white-space: pre" font-family="Allerta" font-size="16" letter-spacing="0em">
+                <tspan x="38.8618" y="770.411">Asia</tspan>
+            </text>
+            <circle id="Ellipse 2" cx="17.2602" cy="765.26" r="16.2602" fill="#00A7A7"/>
+        </g>
+        <g id="americas-legend">
+            <text id="Americas" fill="#C4C4CD" xml:space="preserve" style="white-space: pre" font-family="Allerta" font-size="16" letter-spacing="0em">
+                <tspan x="138.267" y="769.289">Americas</tspan>
+            </text>
+            <path id="Polygon 2" d="M116.966 749L133.16 777.049H100.772L116.966 749Z" fill="#6E8CDD"/>
+        </g>
+        <g id="europe-legend">
+            <text id="Europe" fill="#C4C4CD" xml:space="preserve" style="white-space: pre" font-family="Allerta" font-size="16" letter-spacing="0em">
+                <tspan x="303.08" y="768.744">Europe</tspan>
+            </text>
+            <rect id="Rectangle 582_2" x="265.218" y="749" width="29.2683" height="29.2683" fill="#B15DFF"/>
+        </g>
+    </g>
+</svg>

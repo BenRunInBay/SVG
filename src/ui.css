@@ -1,0 +1,273 @@
+html,
+body {
+  font-family: "Nunito", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+#app,
+main {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  background-color: black;
+  background-image: url(images/backgrounds/Cement09-byGhostlyPixels.png);
+  background-size: cover;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 3em;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 150px auto;
+  grid-template-areas:
+    "header header"
+    "content sidebar";
+  overflow: hidden;
+}
+
+
+
+section h1 {
+  grid-area: header;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5em;
+  margin-bottom: 2em;
+  font-size: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+section h1 em,
+section h1 b {
+  margin: 0 .25em 0 .25em;
+}
+
+section>div,
+section>ul {
+  grid-area: content;
+}
+
+section>div h2,
+section>div h3,
+section>ul {
+  margin-top: 0;
+}
+section a {
+  color: lightblue;
+}
+
+section aside {
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  padding: 5em 5em 0 5em;
+  margin-left: 5em;
+  background-color: #222;
+  border-left: 2px solid #444;
+}
+
+section aside a {
+  color: lightblue;
+  text-decoration: none;
+  margin-bottom: 1em;
+  font-family: Allerta, Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
+  display: flex;
+}
+
+section aside a svg {
+  margin-right: 0.25em;
+}
+
+section aside a.router-link-active span {
+  color: #ffe600;
+}
+
+section ul,
+section ol {
+  margin-top: 0;
+  width: 50%;
+  min-width: min(40em, 100%);
+}
+
+section ul li,
+section ol li,
+section p {
+  margin-top: 0;
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
+
+section ul li ul li,
+section ol li ol li {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  font-size: 1em;
+}
+
+
+section li.demo::before {
+  content: "";
+  display: block;
+  background: url("images/icons/lightbulb-on.png") no-repeat;
+  width: 36px;
+  height: 36px;
+  float: left;
+  margin: 0 6px 0 -36px;
+}
+
+section div img,
+section div object,
+section div svg {
+  width: 100%;
+  height: auto;
+}
+
+section b {
+  color: #ffe600;
+}
+
+section input[type=text] {
+  font-size: 1.5em;
+  padding: 5px;
+  margin-bottom: 1em;
+}
+
+section input[type=text]:focus {
+  background-color: #ffe600;
+}
+
+.web-example {
+  border: 4px double #aaa;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #111;
+}
+
+.two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+}
+
+.clickable {
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+.clickable:hover {
+  filter: drop-shadow(0px 0px 15px rgb(255 0 0 / 1));
+}
+
+.clickable:hover tspan {
+  fill: red;
+}
+
+.outline {
+  border: 1px solid red;
+}
+
+.emphasis {
+  font-style: italic;
+  color: #ffe600;
+  list-style-type: none;
+  margin-top: 2em;
+}
+
+.highlight {
+  background-color: lightgreen;
+  color: black;
+  font-weight: bold;
+  padding: 5px;
+}
+
+
+
+@media screen and (max-width: 1500px) {
+  section {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header"
+      "content";
+  }
+
+  section aside {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  section {
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto;
+    grid-template-areas:
+      "header"
+      "content";
+    font-size: 0.9em;
+  }
+
+  section h1 {
+    margin-bottom: 0.5em;
+  }
+
+  .two {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media print {
+  main {
+    height: auto;
+    background: none;
+    background-color: white;
+    color: black;
+  }
+
+  section {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header"
+      "content";
+    height: auto;
+    border-bottom: 1px dotted black;
+    break-after: page;
+  }
+
+  section aside {
+    display: none;
+  }
+}
+
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #333;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4e4e57;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+  cursor: grab;
+}
